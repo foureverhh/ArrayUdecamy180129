@@ -59,6 +59,7 @@ public class Main {
                 for (int i = 0; i < values.length; i++)
                 {
                         values[i] = scanner.nextInt();
+                        return values;
                 }
 
             }
@@ -66,7 +67,7 @@ public class Main {
             {
                         System.out.println("Only numbers are accepted");
             }
-            return values;
+
         }
 
     }
