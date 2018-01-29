@@ -52,24 +52,24 @@ public class Main {
     {
         System.out.println("Enter " + number + " integer values.\r");
         int[] values = new int[number];
-        while(true)
-        {
+
 
                 for (int i = 0; i < values.length; i++)
                 {
-                    try
+                    while(true)
                     {
-                        values[i] = scanner.nextInt();
-                    }
-                    catch (InputMismatchException e)
-                    {
-                        System.out.println("Only numbers are accepted");
+                        try
+                        {
+                            values[i] = scanner.nextInt();
+                        }
+                        catch (InputMismatchException e)
+                        {
+                            System.out.println("Only numbers are accepted");
+                        }
                     }
                 }
-
-                return values;
-        }
-
+        return values;
+                
     }
 
     public static double getAverage(int[] array)
