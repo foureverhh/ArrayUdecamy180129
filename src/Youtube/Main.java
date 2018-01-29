@@ -54,20 +54,20 @@ public class Main {
         int[] values = new int[number];
         while(true)
         {
-            try
-            {
+
                 for (int i = 0; i < values.length; i++)
                 {
+                    try
+                    {
                         values[i] = scanner.nextInt();
-                        return values;
+                    }
+                    catch (InputMismatchException e)
+                    {
+                        System.out.println("Only numbers are accepted");
+                    }
                 }
 
-            }
-            catch (InputMismatchException e)
-            {
-                        System.out.println("Only numbers are accepted");
-            }
-
+                return values;
         }
 
     }
