@@ -52,22 +52,8 @@ public class Main {
     {
         System.out.println("Enter " + number + " integer values.\r");
         int[] values = new int[number];
-
-
-                for (int i = 0; i < values.length; i++)
-                {
-                    while(true)
-                    {
-                        try
-                        {
-                            values[i] = scanner.nextInt();
-                        }
-                        catch (InputMismatchException e)
-                        {
-                            System.out.println("Only numbers are accepted");
-                        }
-                    }
-                }
+        for (int i = 0; i < values.length; i++)
+            values[i] = scanner.nextInt();
         return values;
                 
     }
